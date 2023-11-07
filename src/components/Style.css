@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: gainsboro;
+}
+
+a{
+    color: black;
+}
+:active{
+    color: black;
+}
+:hover{
+    color: black;
+}
+:visited{
+    color: black;
+}
+.App-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .App-header ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin: 1rem;
+  }
+  .carrito{
+    width: 20px;
+    height: 20px;
+  }
+  #cart{
+    color: black;
+    align-items: center;
+    text-align: center;
+  }
+
+  #nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    border: 1rem;
+    border-color: black;
+    margin: 1rem;
+
+  }
