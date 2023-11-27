@@ -1,0 +1,121 @@
+[{
+    "id": 0,
+    "tipo": "Comida",
+    "categoria":"gatos",
+    "nombre": "Alimento para Gatos",
+    "precio": 20.000,
+    "stock": 15,
+    "detalle":"Alimento Premium Gato Adulto 7,5kg .",
+    "imagen": "../resources/im.webp"
+},
+{
+    "id": 1,
+    "tipo": "Comida",
+    "categoria":"perros",
+    "nombre": "Alimento para Perros",
+    "precio": 28.000,
+    "stock": 24,
+    "detalle":"Alimento Premium Perro Adulto 20kg.",
+    "imagen": "../resources/img/AlimentoP.webp"
+},
+{
+    "id": 2,
+    "tipo": "Comida",
+    "categoria":"otros",
+    "nombre": "Alimento para Peces",
+    "precio": 2.420,
+    "stock": 20,
+    "detalle":"Comida para Peces Shulet 20gr.",
+    "imagen": "../resources/img/AlimentoO.webp"
+},
+{
+    "id": 3,
+    "tipo": "Comida",
+    "categoria":"otros",
+    "nombre": "Alimento para Conejos",
+    "precio": 390,
+    "stock": 99,
+    "detalle":"Alimento para conejo 1kg Suelto.",
+    "imagen": "../resources/img/AlimentoO2.webp"
+},
+{
+    "id": 4,
+    "tipo": "Juguete",
+    "categoria":"gatos",
+    "nombre": "Varita para Gatos",
+    "precio": 6.000,
+    "stock": 6,
+    "detalle":"Juguete Varita Para Gatos Con Plumas.",
+    "imagen": "../resources/img/JugueteG.webp"
+},
+{
+    "id": 5,
+    "tipo": "Juguete",
+    "categoria":"perros",
+    "nombre": "Hueso para Perros",
+    "precio": 2.690,
+    "stock": 20,
+    "detalle":"Hueso de cuero 9/10 24cm Largo.",
+    "imagen": "../resources/img/JugueteP.webp"
+},
+{
+    "id": 6,
+    "tipo": "Juguete",
+    "categoria":"perros",
+    "nombre": "Dentastix para Perros",
+    "precio": 680,
+    "stock": 90,
+    "detalle":"Pedigree Dentastix Raza Pequeña 3 unidades.",
+    "imagen": "../resources/img/JugueteP2.webp"
+},
+{
+    "id": 7,
+    "tipo": "Juguete",
+    "categoria":"gatos",
+    "nombre": "Raton de Juguete para Gatos",
+    "precio": 2.300,
+    "stock": 10,
+    "detalle":"Ratón de Hierba Gatera con Plumas.",
+    "imagen": "../resources/img/JugueteG2.webp"
+},
+{
+    "id": 8,
+    "tipo": "Accesorio",
+    "categoria":"gatos",
+    "nombre": "Mueble para Gatos",
+    "precio": 30.000,
+    "stock": 6,
+    "detalle":"Mueble Can Cat 4 Pisos 143cm.",
+    "imagen": "../resources/img/Rascador.webp"
+},
+{
+    "id": 9,
+    "tipo": "Accesorio",
+    "categoria":"perros",
+    "nombre": "Cucha para Perros",
+    "precio": 16.000,
+    "stock": 8,
+    "detalle":"Cucha Pet One Two de Madera Grande 102cm x 82cm x 90cm.",
+    "imagen": "../resources/img/Cucha.webp"
+},
+{
+    "id": 10,
+    "tipo": "Accesorio",
+    "categoria":"otros",
+    "nombre": "Bebedero para Picaflores",
+    "precio": 1.580,
+    "stock": 10,
+    "detalle":"Bebedero Picaflor Con Base Y 4 Flores.",
+    "imagen": "../resources/img/Bebedero.webp"
+},
+{
+    "id": 11,
+    "tipo": "Accesorio",
+    "categoria":"perros",
+    "nombre": "Comederos para Perros",
+    "precio": 7.640,
+    "stock": 70,
+    "detalle":"Comedero Acero 64 oz.",
+    "imagen": "../resources/img/Comedero.webp"
+}
+]
