@@ -1,4 +1,4 @@
-import cart from "../../../public/resources/icons/cart.svg";
+import cart from "../../icons/cart.svg";
 
 function Carrito() {
     return (

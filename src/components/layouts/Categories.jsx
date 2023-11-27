@@ -8,13 +8,13 @@ return (
         <Link to="/"><button className='button titles'>Inicio</button></Link>
     </li>
     <li>
-        <Link to="/category/libretas"><button className='button titles'>Libretas</button></Link>
+        <Link to="/category/comida"><button className='button titles'>Comida</button></Link>
     </li>
     <li>
-        <Link to="/category/stickers"><button className='button titles'>Stickers</button></Link>
+        <Link to="/category/juguetes"><button className='button titles'>Juguetes</button></Link>
     </li>
     <li>
-        <Link to="/category/posters"><button className='button titles'>Posters</button></Link>
+        <Link to="/category/accesorios"><button className='button titles'>Accesorios</button></Link>
     </li>
 </ul>
 );

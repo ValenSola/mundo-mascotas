@@ -6,7 +6,7 @@
     "precio": 20.000,
     "stock": 15,
     "detalle":"Alimento Premium Gato Adulto 7,5kg .",
-    "imagen": "../resources/im.webp"
+    "imagen": "../resources/img/AlimentoG.webp"
 },
 {
     "id": 1,
