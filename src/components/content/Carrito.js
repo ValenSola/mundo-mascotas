@@ -1,17 +1,11 @@
-import cart from "../../icons/cart.svg";
+import React from 'react';
 
-function Carrito() {
-    return (
-      <div class="cart-iconos">
-        <div id="cart">
-          <div class="cart-contador">
-            <div id="contador-cart">0</div>
-            <img class="carrito" src={cart}/>
-          </div>
-        </div>
-        <div class="none" id="container-cart"></div>
-      </div>
-    );
-  }
-  
-  export default Carrito;
+const Carrito = () => {
+return (
+<div>
+    <h1>Aquí ira un carrito en el futuro...</h1>
+</div>
+);
+}
+
+export default Carrito;
