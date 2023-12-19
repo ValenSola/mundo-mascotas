@@ -1,31 +1,43 @@
-import React from 'react';
-import ItemCount from './ItemCount';
+import { useContext, useState } from "react";
+import { toCapital } from "../../helpers/toCapital"
+import ItemCount from "./ItemCount"
+import { CartContext } from "../context/CartContext";
 
-const ItemDetail = ({item}) => {
 
-const onAdd = (cantidad) => {
-if(cantidad === 1) {
-alert(`${cantidad} Item ha sido agregado al carrito.`)
-}else {
-alert(`${cantidad} Items han sido agregados al carrito.`)
-}
-}
+const ItemDetail = ( {item} ) => {
 
-return (
-<div className='cart-container-detail'>
-    <div className='image-container-detail'>
-        <img className='image-producto-detail' src={item.imagen} alt="" />
+    const { carrito, agregarAlCarrito } = useContext(CartContext);
+    console.log(carrito);
+
+    const [cantidad, setCantidad] = useState(1);
+
+    const handleRestar = () => {
+        cantidad > 1 && setCantidad(cantidad - 1)
+    }
+
+    const handleSumar = () => {
+        cantidad < item.stock && setCantidad(cantidad + 1)
+    }
+
+  return (
+    <div className="container">
+        <div className="producto-detalle">
+            <img src={item.imagen} alt={item.titulo} />
+            <div>
+                <h3 className="titulo">{item.titulo}</h3>
+                <p className="descripcion">{item.descripcion}</p>
+                <p className="categoria">Categoría: {toCapital(item.categoria)}</p>
+                <p className="precio">${item.precio}</p>
+                <ItemCount
+                  cantidad={cantidad}
+                  handleSumar={handleSumar}
+                  handleRestar={handleRestar}
+                  handleAgregar={() => { agregarAlCarrito(item, cantidad) }}
+                />
+            </div>
+        </div>
     </div>
-    <div className='cart-description-container-detail'>
-        <p className='titulo-producto'>Nombre: {item.nombre}</p>
-        <p className='titulo-producto'>Tipo: {item.tipo}</p>
-        <p className='titulo-producto'>Detalle: {item.detalle}</p>
-        <p className='titulo-producto'>Precio: ${item.precio}</p>
-        <p className='titulo-producto'>stock: {item.stock} unidades</p>
-    </div>
-    <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
-</div>
-);
+  )
 }
 
-export default ItemDetail;
+export default ItemDetail
