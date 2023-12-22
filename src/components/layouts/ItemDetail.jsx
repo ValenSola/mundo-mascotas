@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import ItemCount from "./ItemCount"
 import { CartContext } from "../context/CartContext.jsx";
+import { toCapital } from "../helpers/toCapital.js";
 
 
 const ItemDetail = ( {item} ) => {
@@ -25,7 +26,7 @@ const ItemDetail = ( {item} ) => {
             <div>
                 <h3 className="titulo">{item.nombre}</h3>
                 <p className="descripcion">{item.detalle}</p>
-                <p className="categoria">Categoría: {(item.category)}</p>
+                <p className="categoria">Categoría: {toCapital(item.category)}</p>
                 <p className="precio">${item.precio}</p>
                 <ItemCount
                   cantidad={cantidad}
