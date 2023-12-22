@@ -1,14 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { CartContext } from '../context/CartContext';
+import { FaCartShopping } from "react-icons/fa6";
 
 const CartWidget = () => {
-return (
-<>
-    <Link className='invert' to={"/carrito"}> 
-        <img className='shop-cart' src="../resources/icons/shop-cart.jpg" alt="" />
-    </Link>
-</>
-);
+
+    const { cantidadEnCarrito } = useContext(CartContext);
+
+  return (
+    <div>
+        <Link className="menu-link" to="/carrito">
+        <FaCartShopping />
+          <span className="numerito">{cantidadEnCarrito()}</span>
+        </Link>
+    </div>
+  )
 }
 
 export default CartWidget;

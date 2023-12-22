@@ -11,10 +11,10 @@ return (
         <Link to="/category/comida"><button className='button titles'>Comida</button></Link>
     </li>
     <li>
-        <Link to="/category/juguetes"><button className='button titles'>Juguetes</button></Link>
+        <Link to="/category/accesorios"><button className='button titles'>Accesorios</button></Link>
     </li>
     <li>
-        <Link to="/category/accesorios"><button className='button titles'>Accesorios</button></Link>
+        <Link to="/category/juguetes"><button className='button titles'>Juguetes</button></Link>
     </li>
 </ul>
 );

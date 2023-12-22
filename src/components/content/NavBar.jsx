@@ -1,10 +1,12 @@
 
 import React from 'react';
+
+ import React from 'react';
 import Categories from '../layouts/Categories';
 import SearchBar from '../layouts/SearchBar';
 import {Link} from 'react-router-dom'
 
-/*CartWidget.jsx se encuentra dentro de SearchBar.jsx por razones de organización y prolijidad*/
+
 
 const Navbar = () => {
 return (
@@ -22,4 +24,5 @@ return (
 );
 }
 
-export default Navbar;
+export default Navbar;  
+

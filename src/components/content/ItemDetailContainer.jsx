@@ -1,25 +1,33 @@
-import React, {useState, useEffect} from 'react';
-import { useParams } from 'react-router-dom';
-import ItemDetail from '../layouts/ItemDetail'
+
+import { useEffect, useState } from "react"
+import ItemDetail from "../layouts/ItemDetail";
+import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../firebase/config";
+
 
 const ItemDetailContainer = () => {
-const [producto, setProducto] = useState([]);
-const {id} = useParams();
 
-useEffect(()=>{
-fetch (`../../json/productos.json`)
-.then(response => response.json())
-.then(producto => {
-const producto1 = producto.find(productoArray => productoArray.id === parseInt(id))
-setProducto(producto1)
-})
-},[id])
+    const [item, setItem] = useState(null);
+    const id = useParams().id;
 
-return (
-<div className='main-container-producto'>
-    <ItemDetail item={producto} />
-</div>
-);
+    useEffect(() => {
+
+      const docRef = doc(db, "productos", id);
+      getDoc(docRef)
+        .then((resp) => {
+          setItem(
+            { ...resp.data(), id: resp.id }
+          );
+        })
+
+    }, [id])
+
+  return (
+    <div>
+        {item && <ItemDetail item={item} />}
+    </div>
+  )
 }
 
 export default ItemDetailContainer;
