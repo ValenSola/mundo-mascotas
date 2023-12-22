@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Item = ( {producto} ) => {
@@ -9,15 +9,11 @@ const Item = ( {producto} ) => {
         <div>
             <h4>{producto.nombre}</h4>
             <p>Precio: ${producto.precio}</p>
-            <p>Categoría: {(producto.categoria)}</p>
+            <p>Categoría: {(producto.category)}</p>
             <Link className="ver-mas" to={`/item/${producto.id}`}>Ver más</Link>
         </div>
     </div>
-    <Link to={`/item/${item.id}`}> 
-    <button className='card-button-detail'>ver detalles</button>
-    </Link>
-</>
-);
+  )
 }
 
-export default Item;
+export default Item

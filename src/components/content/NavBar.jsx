@@ -1,7 +1,5 @@
 
 import React from 'react';
-
- import React from 'react';
 import Categories from '../layouts/Categories';
 import SearchBar from '../layouts/SearchBar';
 import {Link} from 'react-router-dom'
